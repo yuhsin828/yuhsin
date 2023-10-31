@@ -1,0 +1,185 @@
+@font-face {
+    font-family: SweiGothicLegCJKtc-Regular;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic-leg@2.129/WebFont/CJK%20TC/SweiGothicLegCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic-leg@2.129/WebFont/CJK%20TC/SweiGothicLegCJKtc-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: SweiSpringCJKtc-Regular;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/swei-spring@1.065/WebFont/CJK%20TC/SweiSpringCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-spring@1.065/WebFont/CJK%20TC/SweiSpringCJKtc-Regular.woff) format("woff");
+}
+
+::selection {
+    color: #FEFEFE;
+    background: #893636;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: SweiGothicLegCJKtc-Regular, 'Noto Sans TC', sans-serif;
+    color: #141414;
+}
+
+.font_serif {
+    font-family: SweiSpringCJKtc-Regular, 'Noto Serif TC', serif;
+}
+
+.font_engT {
+    font-family: 'Alkatra';
+}
+
+.font_eng {
+    font-family: 'Lato';
+}
+
+.listStyleNone {
+    list-style-type: none;
+}
+
+.hw_100 {
+    height: 100vh;
+    width: 100vw;
+}
+
+/*---------------- cover ----------------*/
+/* .imgBg {
+    position: absolute;
+    height: 150vh;
+    width: 150vh;
+    top: -25vh;
+    left: -50vh;
+    background-color: #893636;
+    border-radius: 50%;
+} */
+
+.photo {
+    height: 200px;
+}
+
+@media screen and (min-width:768px) {
+    .photo {
+        height: auto;
+    }
+}
+
+.btn_main {
+    padding: 0.2rem 0;
+    border: #893636 solid 2px;
+    border-radius: 0.5rem;
+    /* background-color: #893636; */
+    /* color: #FEFEFE; */
+    color: #893636;
+    box-shadow: 0px 4px 0px #893636;
+    text-decoration: none;
+    font-size: smaller;
+    text-align: center;
+}
+
+.btn_main:hover{
+    background-color: #893636;
+    color: #FEFEFE;
+    box-shadow: none;
+    transition: all 0.4s;
+}
+
+/*---------------- scrollDown button ----------------*/
+.down_btn i {
+    color: #893636;
+}
+
+.down_btn i:hover {
+    color: #622525;
+    transition: all 0.4s;
+}
+
+/*---------------- background color ----------------*/
+.bg_main {
+    background-color: #EFDBD9;
+}
+
+.bg_red {
+    background-color: #893636;
+}
+
+.bg_white {
+    background-color: #FEFEFE;
+}
+
+/*---------------- text color ----------------*/
+.text_red {
+    color: #893636;
+}
+
+.text_white {
+    color: #FEFEFE;
+}
+
+/*---------------- other styles ----------------*/
+.fs_xxs {
+    font-size: xx-small;
+}
+
+.fs_sr {
+    font-size: smaller;
+}
+
+.round_05 {
+    border-radius: 0.5rem;
+}
+
+.round_1 {
+    border-radius: 1rem;
+}
+
+/* .round_top_1 {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.round_bottom_1 {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+} */
+
+.round_50 {
+    border-radius: 50%;
+}
+
+.box_shadow_4 {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.box_shadow_2 {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.box_shadow_4:hover,
+.box_shadow_2:hover {
+    box-shadow: none;
+    transition: all 0.4s;
+}
+
+.overflow_dot {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.overflow_lines_dot {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.btn_disable {
+    background-color: #dddddd;
+}
+
+.pointer_none {
+    pointer-events: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
