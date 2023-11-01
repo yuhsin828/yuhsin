@@ -15,9 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@400;700&display=swap"
           rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Caveat+Brush&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Caveat+Brush&family=Lato:wght@400;700&display=swap"
           rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="/favicon.ico">
 
@@ -25,20 +24,49 @@
 </head>
 
 <body>
-    <header class="hw_100 bg_main position-relative">
+    <!-- navbar with hamburger and fixed-top -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top shadow-sm bg_red d-none" id="topNav">
         <div class="container">
-            <div class="row justify-content-around align-items-center">
+            <a class="navbar-brand" href="">
+                Yuhsin's Page
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav row ms-auto" id="navList">
+                    <li class="nav-item col-md-4">
+                        <a class="nav-link text-center m-auto text-nowrap text_white" href="./about.html">About Me</a>
+                    </li>
+                    <li class="nav-item col-md-4">
+                        <a class="nav-link text-center m-auto text-nowrap text_white" href="./uiux.html">UI/UX
+                            Design</a>
+                    </li>
+                    <li class="nav-item col-md-4">
+                        <a class="nav-link text-center m-auto text-nowrap text_white" href="./f2e.html">Front-End</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hw_100 bg_pink">
+        <div class="container">
+            <div class="row justify-content-around align-items-center mb-3">
                 <div class="col-md-6 text-center">
                     <img class="img-fluid photo" src="./image/yuhsin.png" alt="yuhsin's photo">
                 </div>
                 <div class="col-md-5">
-                    <div class="text_red fs-3 fw-semibold mb-2">
-                        蔡鈺昕<span class="ms-4 font_engT">Alice</span>
+                    <div class="text_red fs-3 fw-semibold mb-2 text-center text-md-start">
+                        蔡鈺昕<span class="ms-4 font_eng_title">Alice</span>
                     </div>
-                    <div class="d-flex flex-wrap text_white fs_sr mb-2">
-                        <div class="bg_red round_1 px-2 py-1 me-2 mb-1 text-nowrap"># 細心</div>
-                        <div class="bg_red round_1 px-2 py-1 me-2 mb-1 text-nowrap"># 負責</div>
-                        <div class="bg_red round_1 px-2 py-1 me-2 mb-1 text-nowrap"># 合作</div>
+                    <div class="d-flex justify-content-center justify-content-md-start flex-wrap mb-2">
+                        <div class="tag"># 負責</div>
+                        <div class="tag"># 細心</div>
+                        <div class="tag"># 合作</div>
                     </div>
                     <div class="mb-2">
                         嗨！我是鈺昕，今年 22 歲，畢業於國立臺北教育大學<span class="text_red">數位科技設計學系</span>
@@ -47,11 +75,11 @@
                         是身邊的人對我的評價，這樣的特質讓我可以很容易地發現問題，也善於分析、思考並解決。
                     </div>
                     <div class="d-flex justify-content-between flex-wrap font_eng text_red mb-3">
-                        <div>
-                            <i class="fa-regular fa-envelope me-1"></i>fairy900828@gmail.com
+                        <div class="me-2">
+                            <i class="fa-solid fa-envelope me-1"></i>fairy900828@gmail.com
                         </div>
                         <div>
-                            <i class="fa-regular fa-mobile-button me-1"></i>0989198790
+                            <i class="fa-solid fa-mobile-screen me-1"></i>0989198790
                         </div>
                     </div>
                     <div class="d-flex">
@@ -61,20 +89,75 @@
             </div>
 
             <!-- scrollDown button -->
-            <div class="text-center down_btn" id="scrollDown" type="button">
-                <i class="fa-solid fa-angles-down fs-3"></i>
+            <div class="text-center down_btn mb-3" id="scrollDown">
+                <i class="fa-solid fa-angles-down fs-3" type="button"></i>
             </div>
         </div>
     </header>
 
-    <nav>
-        <div>
-            123
+    <section class="bg_white" id="section1">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="d-flex mb-3">
+                    <div class="title_mark"></div>
+                    <div class="text_red font_eng_title fs-3 fw-semibold">Education</div>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <div class="mx-5">
+                        <img class="img-fluid" src="./image/NTUE.png" alt="NTUE logo" height="100%">
+                    </div>
+                    <div class="flex-fill d-flex flex-wrap">
+                        <div class="me-auto">
+                            <div class="text_red">國立臺北教育大學</div>
+                            <div>數位科技設計學系</div>
+                        </div>
+                        <div class="font_eng fs_sr">2019.09 ~ 2023.06</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="d-flex mb-3">
+                    <div class="title_mark"></div>
+                    <div class="text_red font_eng_title fs-3 fw-semibold">Skills</div>
+                </div>
+
+                <div class="col-md-6 d-flex flex-column align-items-md-center mb-5">
+                    <div class="mb-3">
+                        <div class="text_red font_eng_title fs-5">UI/UX Design</div>
+                        <div class="underline"></div>
+                    </div>
+                    <ul class="fs_sr p-0 listStyleNone">
+                        <li>✧ 擅長 Figma，了解 Adobe Illustrator 基本操作</li>
+                        <li>✧ 具 RWD 網站、APP 介面設計經驗</li>
+                        <li>✧ 建立 Persona、Scenario、User Journey Map</li>
+                        <li>✧ 建立 Sitemap、Functional Map、Flow</li>
+                        <li>✧ 設計 Wireframe、Mockup、Prototype</li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="./uiux.html" class="flex-fill btn_main">查看作品集</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-flex flex-column align-items-md-center mb-5">
+                    <div class="mb-3">
+                        <div class="text_red font_eng_title fs-5">Front-End</div>
+                        <div class="underline"></div>
+                    </div>
+                    <ul class="fs_sr p-0 listStyleNone">
+                        <li>✧ HTML5、CSS3：熟悉</li>
+                        <li>✧ JavaScript、jQuery：尚可</li>
+                        <li>✧ 具 RWD 網頁獨立切版經驗</li>
+                        <li>✧ 具 Bootstrap 使用經驗</li>
+                        <li>✧ 具 Git 版本管理經驗</li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="./f2e.html" class="flex-fill btn_main">查看作品集</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
-
-    <section>
-
     </section>
 
     <footer>
