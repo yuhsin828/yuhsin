@@ -10,7 +10,7 @@
 
 ::selection {
     color: #FEFEFE;
-    background: #893636;
+    background: #141414;
 }
 
 body {
@@ -35,15 +35,18 @@ body {
 .btn_main {
     padding: 0.25rem 0.5rem;
     border-radius: 0.5rem;
-    background-color: #893636;
-    color: #FEFEFE;
-    box-shadow: 5px 5px 0px #483131;
+    /* background-color: #893636; */
+    /* color: #FEFEFE; */
+    background-color: #e0c0c0;
+    color: #893636;
+    box-shadow: 5px 5px 0px #622525;
     text-decoration: none;
     font-size: smaller;
     text-align: center;
 }
 
 .btn_main:hover {
+    background-color: #893636;
     color: #FEFEFE;
     box-shadow: none;
     transition: all 0.4s;
@@ -53,7 +56,7 @@ body {
     border-radius: 1rem;
     padding: 0.25rem 0.5rem;
     margin: 0 0.5rem 0.25rem 0;
-    background-color: #e4c4b6;
+    background-color: #e0c0c0;
     color: #893636;
     font-size: smaller;
     text-wrap: nowrap;
@@ -90,6 +93,13 @@ body {
     }
 }
 
+nav ul .text_white:hover {
+    background-color: #EFDBD9;
+    color: #893636;
+    border-radius: 1rem;
+    transition: all 0.4s;
+}
+
 /*---------------- scrollDown button ----------------*/
 .down_btn i {
     color: #893636;
@@ -97,6 +107,24 @@ body {
 
 .down_btn i:hover {
     color: #622525;
+    transition: all 0.4s;
+}
+
+/*---------------- goTop button ----------------*/
+.top_btn {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    bottom: 2rem;
+    right: 1.5rem;
+    z-index: 999;
+    background-color: #622525;
+    border: 0;
+    border-radius: 50%;
+}
+
+.top_btn:hover {
+    box-shadow: none !important;
     transition: all 0.4s;
 }
 
@@ -109,8 +137,8 @@ body {
     background-color: #893636;
 }
 
-.bg_orange {
-    background-color: #e4c4b6;
+.bg_lightRed {
+    background-color: #e4b6b6;
 }
 
 .bg_white {
