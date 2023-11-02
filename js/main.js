@@ -1,8 +1,8 @@
-const main = $('#section1').offset().top;
+const main = $('#scrollDown').offset().top;
 
 /* nav固定在上方 */
 $(window).scroll(function () {
-    if ($(this).scrollTop() >= main) {  /* 當滑動到section1 */
+    if ($(this).scrollTop() >= main) {  /* 當滑動到scrollDown */
         $('.navbar').removeClass('d-none');
     } else {
         $('.navbar').addClass('d-none');
@@ -11,7 +11,7 @@ $(window).scroll(function () {
 
 /* 往下滑 */
 $('#scrollDown').click(function () {
-    const topMain = main - $('.navbar').innerHeight();
+    const topMain = $('#section1').offset().top - $('.navbar').innerHeight();
     $('html,body').animate({ scrollTop: topMain }, 200);
 });
 
