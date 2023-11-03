@@ -17,6 +17,7 @@ body {
     overflow-x: hidden;
     font-family: SweiGothicLegCJKtc-Regular, 'Noto Sans TC', sans-serif;
     color: #141414;
+    z-index: 999;
 }
 
 .font_serif {
@@ -126,6 +127,14 @@ nav ul .text_white:hover {
 .top_btn:hover {
     box-shadow: none !important;
     transition: all 0.4s;
+}
+
+/*---------------- footer ----------------*/
+footer {
+    position: sticky;
+    z-index: -1;
+    width: 100%;
+    bottom: 0;
 }
 
 /*---------------- background color ----------------*/
